@@ -1,0 +1,326 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 2rem 0 4rem;
+}
+
+.testimonial-grid {
+  width: 80%;
+  margin: 0 auto 2rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four"
+    "five";
+
+  @media screen and (min-width: 768px) and (max-width: 899px) {
+    grid-template-areas:
+      "one one"
+      "two five"
+      "three five"
+      "four four ";
+  }
+
+  @media screen and (min-width: 900px) {
+    grid-template-areas:
+      "one one two five"
+      "three four four five";
+  }
+
+  // UMA ALTERNATIVA AO GRID TEMPLATE AREA - LEMBRAR DE REMOVER A PROPRIEDADE GRID-AREA DOS CARDS
+  // @media screen and (min-width: 768px) {
+  //   .testimonial-grid {
+  //     grid-template-columns: repeat(4, 1fr);
+  //   }
+  //   .grid-col-span-2 {
+  //     grid-column: span 2;
+  //   }
+
+  //   .grid-special {
+  //     grid-column-start: 4;
+  //     // grid-row-start: 1;
+  //     // grid-row-end: 3;
+  //     grid-row: 1 / span 2;
+  //   }
+  // }
+}
+
+.testimonial-card01 {
+  grid-area: one; //essa linha serve para designar em qual grid-area vamos alocar o card dentro do grid-template-area
+  width: 100%;
+  background-color: #af4d3b;
+  color: #eeeeee;
+  box-shadow: 2px 2px 5px #333333;
+
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+  header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    margin-bottom: 1rem;
+
+    .card-img-div {
+      width: 75px;
+      height: 75px;
+      margin-right: 1rem;
+
+      img {
+        width: 100%;
+        border: 1px solid wheat;
+        border-radius: 50%;
+      }
+    }
+
+    .text-box {
+      h2 {
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-style: italic;
+        font-weight: 600;
+      }
+    }
+  }
+
+  section {
+    h3 {
+      padding: 1rem 0;
+      font-size: 1.5rem;
+    }
+
+    p {
+      padding-bottom: 1rem;
+      font-size: 1.15rem;
+    }
+  }
+}
+
+.testimonial-card02 {
+  grid-area: two;
+  width: 100%;
+  background-color: #474140;
+  color: #eeeeee;
+  box-shadow: 2px 2px 5px #333333;
+
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+  header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    margin-bottom: 1rem;
+
+    .card-img-div {
+      width: 75px;
+      height: 75px;
+      margin-right: 1rem;
+
+      img {
+        width: 100%;
+        border: 1px solid wheat;
+        border-radius: 50%;
+      }
+    }
+
+    .text-box {
+      h2 {
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-style: italic;
+        font-weight: 600;
+      }
+    }
+  }
+
+  section {
+    h3 {
+      padding: 1rem 0;
+      font-size: 1.5rem;
+    }
+
+    p {
+      padding-bottom: 1rem;
+      font-size: 1.15rem;
+    }
+  }
+}
+
+.testimonial-card03 {
+  grid-area: three;
+  width: 100%;
+  background-color: #e7bb79;
+  color: #1b1b1b;
+  box-shadow: 2px 2px 5px #333333;
+
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+  header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    margin-bottom: 1rem;
+
+    .card-img-div {
+      width: 75px;
+      height: 75px;
+      margin-right: 1rem;
+
+      img {
+        width: 100%;
+        border: 1px solid wheat;
+        border-radius: 50%;
+      }
+    }
+
+    .text-box {
+      h2 {
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-style: italic;
+        font-weight: 600;
+      }
+    }
+  }
+
+  section {
+    h3 {
+      padding: 1rem 0;
+      font-size: 1.5rem;
+    }
+
+    p {
+      padding-bottom: 1rem;
+      font-size: 1.15rem;
+    }
+  }
+}
+
+.testimonial-card04 {
+  grid-area: four;
+  width: 100%;
+  background-color: #31230d;
+  color: #eeeeee;
+  box-shadow: 2px 2px 5px #333333;
+
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+  header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    margin-bottom: 1rem;
+
+    .card-img-div {
+      width: 75px;
+      height: 75px;
+      margin-right: 1rem;
+
+      img {
+        width: 100%;
+        border: 1px solid wheat;
+        border-radius: 50%;
+      }
+    }
+
+    .text-box {
+      h2 {
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-style: italic;
+        font-weight: 600;
+      }
+    }
+  }
+
+  section {
+    h3 {
+      padding: 1rem 0;
+      font-size: 1.5rem;
+    }
+
+    p {
+      padding-bottom: 1rem;
+      font-size: 1.15rem;
+    }
+  }
+}
+
+.testimonial-card05 {
+  grid-area: five;
+  width: 100%;
+  background-color: #dc143c;
+  color: #eeeeee;
+  box-shadow: 2px 2px 5px #333333;
+
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+  header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    margin-bottom: 1rem;
+
+    .card-img-div {
+      width: 75px;
+      height: 75px;
+      margin-right: 1rem;
+
+      img {
+        width: 100%;
+        border: 1px solid wheat;
+        border-radius: 50%;
+      }
+    }
+
+    .text-box {
+      h2 {
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-style: italic;
+        font-weight: 600;
+      }
+    }
+  }
+
+  section {
+    h3 {
+      padding: 1rem 0;
+      font-size: 1.5rem;
+    }
+
+    p {
+      padding-bottom: 1rem;
+      font-size: 1.15rem;
+    }
+  }
+}
